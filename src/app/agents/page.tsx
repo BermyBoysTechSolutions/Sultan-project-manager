@@ -83,6 +83,17 @@ export default function AgentsPage() {
       tasksCompleted: 234,
       template: 'va-basic',
       description: 'Project coordination and team communication'
+    },
+    {
+      id: '4',
+      name: 'WhatsApp Business Bot',
+      type: 'api',
+      status: 'running',
+      client: 'TechFlow Solutions',
+      lastActive: '10 minutes ago',
+      tasksCompleted: 67,
+      template: 'customer-support',
+      description: 'Customer support and order processing'
     }
   ]);
 
