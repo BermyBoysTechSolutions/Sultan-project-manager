@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sultan PM - Project Management Dashboard
 
-## Getting Started
+A beautiful project management dashboard for monitoring OpenClaw tasks, sub-agents, and API keys, inspired by Bermy Banana's UI design.
 
-First, run the development server:
+## 🎨 Features
+
+- **Dashboard** with real-time system status
+- **Task Management** with progress tracking
+- **API Key Management** with secure storage
+- **Bermy Banana Inspired UI** (yellow/orange theme)
+- **Single User Authentication** (for Sultan Yahya)
+- **Mobile Responsive** design
+- **Next.js + TypeScript** for optimal performance
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 16.1.6
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Authentication**: NextAuth.js
+- **Deployment**: Vercel
+
+## 📦 Installation
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+NEXTAUTH_URL=https://your-domain.vercel.app
+NEXTAUTH_SECRET=your-secure-secret
+ADMIN_USERNAME=your-username
+ADMIN_PASSWORD=your-secure-password
+```
 
-## Learn More
+## 📝 Pages
 
-To learn more about Next.js, take a look at the following resources:
+- **Home**: `/` - Landing page
+- **Dashboard**: `/dashboard` - System monitoring
+- **Tasks**: `/tasks` - Task management
+- **API Keys**: `/keys` - API key management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 UI/UX Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Inspired by Bermy Banana's branding:
+- Yellow/orange gradient backgrounds
+- Clean card-based layout
+- Smooth animations and transitions
+- Modern, professional appearance
 
-## Deploy on Vercel
+## 🔧 Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Run development server
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Build for production
+npm run build
+
+# Deploy to Vercel
+npm run deploy
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── app/              # Next.js app directory
+│   ├── dashboard/    # Dashboard page
+│   ├── tasks/        # Task management
+│   ├── keys/         # API key management
+│   └── layout.tsx    # Root layout
+├── components/       # Reusable components
+│   ├── ui/          # UI components
+│   └── Layout.tsx    # Main layout
+├── lib/             # Utilities and helpers
+│   ├── auth.ts      # Authentication config
+│   ├── colors.ts    # Color palette
+│   └── api.ts       # API utilities
+└── types/           # TypeScript types
+```
+
+## 🚀 Deployment
+
+The app is configured for easy Vercel deployment:
+
+1. Connect your GitHub repo to Vercel
+2. Add environment variables
+3. Deploy!
+
+## 🎯 Features for OpenClaw Users
+
+- Monitor active tasks and sub-agents
+- Track API costs and performance
+- Manage API keys securely
+- Real-time status updates
+- Beautiful, accessible interface
+
+## 📄 License
+
+Private project for Sultan Yahya
